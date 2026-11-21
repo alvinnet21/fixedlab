@@ -8,7 +8,7 @@ Static HTML/CSS/JS — no build step. Open `index.html` or host the folder on an
 index.html              single-page site (hero, services, how it works, about, FAQ, quote form)
 assets/css/style.css    styles — brand tokens at the top (:root)
 assets/js/main.js       mobile menu, scroll reveal, quote form
-assets/img/             logo mark + favicon (SVG)
+assets/img/             logo (from client), favicon, circuit background
 ```
 
 ## Before going live — replace placeholders
@@ -17,7 +17,9 @@ assets/img/             logo mark + favicon (SVG)
 - **Social links**: the `href="#"` links in the footer.
 - **Business hours**: currently `Mon–Sat · 9am – 6pm`.
 - **Email**: `hello@fixedlab.com.au` (in `index.html` and `TO` in `assets/js/main.js`).
-- **OG image**: add `assets/img/og-image.png` (1200×630) for link previews.
+- **Fonts**: waiting for the brand fonts from Tomo — swap the Google Fonts link in `index.html`
+  and `--font-display` / `--font-body` in `style.css`.
+- **How it works / About / FAQ**: content still to be confirmed by Tomo (About may be removed).
 
 ## Quote form
 
@@ -28,7 +30,7 @@ replace the `mailto` step in `assets/js/main.js` with a `fetch()` POST to the fo
 ## Brand
 
 Lime `#9AF20D` · Near Black `#080A09` · Surface `#131614` · Graphite `#252A27` · Muted `#9CA39D` · Off White `#F5F6F4`
-Fonts: Space Grotesk (headings), Inter (body).
+Fonts: placeholder Space Grotesk + Inter until the brand fonts arrive.
 
 ## Hosting (GitHub Pages)
 

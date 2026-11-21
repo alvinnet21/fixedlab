@@ -31,18 +31,19 @@
     });
   });
 
-  // Reveal on scroll
-  var items = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-    items.forEach(function (el) { io.observe(el); });
-  } else {
-    items.forEach(function (el) { el.classList.add("in"); });
+  // Mobile action bar: show once the hero buttons are scrolled past, hide over the contact form
+  var bar = document.getElementById("actionBar");
+  var heroActions = document.querySelector(".hero-actions");
+  var contact = document.getElementById("contact");
+  function updateBar() {
+    var pastHero = heroActions.getBoundingClientRect().bottom < 0;
+    var r = contact.getBoundingClientRect();
+    var atContact = r.top < window.innerHeight * 0.85 && r.bottom > 0;
+    bar.classList.toggle("hide", !pastHero || atContact);
   }
+  window.addEventListener("scroll", updateBar, { passive: true });
+  window.addEventListener("resize", updateBar);
+  updateBar();
 
   // Quote form: validates, then opens the visitor's email app with a pre-filled message.
   // To receive submissions directly, point the form at a service such as Formspree (see README).
@@ -57,10 +58,6 @@
       f.classList.toggle("invalid", bad);
       if (bad) ok = false;
     });
-    var email = form.email.value.trim();
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { form.email.classList.add("invalid"); ok = false; }
-    else form.email.classList.remove("invalid");
-
     if (!ok) {
       status.className = "form-status err";
       status.textContent = "Please fill in the highlighted fields.";
@@ -70,7 +67,6 @@
     var body = [
       "Name: " + d.name.value,
       "Phone: " + d.phone.value,
-      "Email: " + (d.email.value || "-"),
       "Service: " + d.service.value,
       "Suburb: " + (d.suburb.value || "-"),
       "On-site visit: " + (d.onsite.checked ? "Yes" : "No"),
