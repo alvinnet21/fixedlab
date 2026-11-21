@@ -29,3 +29,9 @@ replace the `mailto` step in `assets/js/main.js` with a `fetch()` POST to the fo
 
 Lime `#9AF20D` · Near Black `#080A09` · Surface `#131614` · Graphite `#252A27` · Muted `#9CA39D` · Off White `#F5F6F4`
 Fonts: Space Grotesk (headings), Inter (body).
+
+## Hosting (GitHub Pages)
+
+Settings → Pages → Build and deployment → Source: **Deploy from a branch**, Branch: **main**, folder **/ (root)** → Save.
+Live at https://alvinnet21.github.io/fixedlab/ after ~1 minute. For the custom domain `fixedlab.com.au`,
+enter it under Settings → Pages → Custom domain and point the domain's DNS to GitHub Pages.
