@@ -159,7 +159,7 @@ p { margin: 0; }
 .svc-text strong { display: block; font-family: var(--font-display); font-size: 17px; font-weight: 600; line-height: 1.25; }
 .svc-text span { display: block; font-size: 14px; color: var(--muted); line-height: 1.35; margin-top: 2px; }
 .svc-go { color: var(--lime); width: 20px; height: 20px; }
-.svc-note { color: var(--muted); margin-top: 18px; font-size: 15px; }
+.svc-other { border-style: dashed; }
 @media (hover: hover) {
   .svc:hover { border-color: var(--lime); background: var(--surface-2); box-shadow: 0 0 28px rgba(154,242,13,.12); }
 }
@@ -314,7 +314,7 @@ p { margin: 0; }
   .section { padding: 104px 0; }
   .section-head { margin-bottom: 44px; max-width: 680px; }
   .section-sub { font-size: 18px; }
-  .svc-list { grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  .svc-list { grid-template-columns: repeat(4, 1fr); gap: 14px; }
   .svc { flex-direction: column; align-items: flex-start; padding: 22px; min-height: 200px; gap: 16px; }
   .svc-go { display: none; }
   .svc-ico { width: 56px; height: 56px; }
