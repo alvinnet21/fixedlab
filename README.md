@@ -10,7 +10,7 @@ faq.html                FAQ page
 assets/css/style.css    styles — brand tokens at the top (:root)
 assets/js/main.js       mobile menu, action bar, quote form
 assets/fonts/           self-hosted fonts (woff2)
-assets/img/             logo (from client), favicon, icons.svg sprite, circuit background
+assets/img/             logo (from client), favicon, icons.svg sprite, brands/ (service brand logos), circuit background
 tools/make_circuit.py   regenerates the random circuit background (python3 tools/make_circuit.py <seed>)
 CARA-EDIT.md            how to edit text on GitHub (Bahasa Indonesia)
 ```
