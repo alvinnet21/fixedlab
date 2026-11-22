@@ -8,7 +8,8 @@ Static HTML/CSS/JS — no build step. Open `index.html` or host the folder on an
 index.html              home page (hero, services, how it works, quote form)
 faq.html                FAQ page
 assets/css/style.css    styles — brand tokens at the top (:root)
-assets/js/main.js       mobile menu, scroll reveal, quote form
+assets/js/main.js       mobile menu, action bar, quote form
+assets/fonts/           self-hosted fonts (woff2)
 assets/img/             logo (from client), favicon, icons.svg sprite, circuit background
 tools/make_circuit.py   regenerates the random circuit background (python3 tools/make_circuit.py <seed>)
 CARA-EDIT.md            how to edit text on GitHub (Bahasa Indonesia)
@@ -20,8 +21,8 @@ CARA-EDIT.md            how to edit text on GitHub (Bahasa Indonesia)
 - **Social links**: the `href="#"` links in the footer.
 - **Business hours**: currently `Mon–Sat · 9am – 6pm`.
 - **Email**: `hello@fixedlab.com.au` (in `index.html` and `TO` in `assets/js/main.js`).
-- **Fonts**: waiting for the brand fonts from Tomo — swap the Google Fonts link in `index.html`
-  and `--font-display` / `--font-body` in `style.css`.
+- **Fonts**: waiting for the brand fonts from Tomo — put the files in `assets/fonts/`, update the
+  `@font-face` rules and `--font-display` / `--font-body` in `style.css`.
 - **How it works / FAQ**: content still to be confirmed by Tomo.
 
 ## Quote form
