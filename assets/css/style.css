@@ -159,7 +159,7 @@ p { margin: 0; }
   display: grid; place-items: center; background: rgba(154,242,13,.08); border: 1px solid rgba(154,242,13,.25);
 }
 .svc-ico svg { width: 26px; height: 26px; fill: none; stroke: var(--lime); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-.svc-ico.brand svg { fill: var(--lime); stroke: none; width: 24px; height: 24px; }
+.svc-ico.brand img { width: 24px; height: 24px; }
 .svc-text { flex: 1; min-width: 0; }
 .svc-text strong { display: block; font-family: var(--font-display); font-size: 17px; font-weight: 600; line-height: 1.25; }
 .svc-text span { display: block; font-size: 14px; color: var(--muted); line-height: 1.35; margin-top: 2px; }
