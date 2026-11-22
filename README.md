@@ -5,10 +5,13 @@ Static HTML/CSS/JS — no build step. Open `index.html` or host the folder on an
 (Netlify, Vercel, Cloudflare Pages, GitHub Pages).
 
 ```
-index.html              single-page site (hero, services, how it works, about, FAQ, quote form)
+index.html              home page (hero, services, how it works, quote form)
+faq.html                FAQ page
 assets/css/style.css    styles — brand tokens at the top (:root)
 assets/js/main.js       mobile menu, scroll reveal, quote form
-assets/img/             logo (from client), favicon, circuit background
+assets/img/             logo (from client), favicon, icons.svg sprite, circuit background
+tools/make_circuit.py   regenerates the random circuit background (python3 tools/make_circuit.py <seed>)
+CARA-EDIT.md            how to edit text on GitHub (Bahasa Indonesia)
 ```
 
 ## Before going live — replace placeholders
@@ -19,7 +22,7 @@ assets/img/             logo (from client), favicon, circuit background
 - **Email**: `hello@fixedlab.com.au` (in `index.html` and `TO` in `assets/js/main.js`).
 - **Fonts**: waiting for the brand fonts from Tomo — swap the Google Fonts link in `index.html`
   and `--font-display` / `--font-body` in `style.css`.
-- **How it works / About / FAQ**: content still to be confirmed by Tomo (About may be removed).
+- **How it works / FAQ**: content still to be confirmed by Tomo.
 
 ## Quote form
 
