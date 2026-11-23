@@ -130,7 +130,7 @@ p { margin: 0; }
 .section-alt .svc, .section-alt .contact-card { background: rgba(8, 10, 9, .7); }
 .section-alt .svc:active { background: var(--bg); }
 .section-head { margin-bottom: 24px; }
-.kicker { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--lime); font-weight: 600; margin-bottom: 10px; }
+.kicker { font-family: var(--font-display); font-size: 16px; letter-spacing: .18em; text-transform: uppercase; color: var(--lime); font-weight: 700; margin-bottom: 12px; }
 .section h2 { font-size: clamp(30px, 8vw, 50px); font-weight: 700; }
 .section-sub { color: var(--muted); font-size: 16px; margin-top: 10px; }
 .inline-link { color: var(--lime); font-weight: 600; border-bottom: 1px solid rgba(154,242,13,.4); }
@@ -290,6 +290,7 @@ p { margin: 0; }
   
   .section { padding: 104px 0; }
   .section-head { margin-bottom: 44px; max-width: 680px; }
+  .kicker { font-size: 19px; margin-bottom: 14px; }
   .section-sub { font-size: 18px; }
   .svc-list { grid-template-columns: repeat(4, 1fr); gap: 14px; }
   .svc { flex-direction: column; align-items: flex-start; padding: 22px; min-height: 200px; gap: 16px; }
