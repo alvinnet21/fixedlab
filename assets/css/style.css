@@ -215,16 +215,19 @@ p { margin: 0; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--graphite); padding-top: 44px; background: rgba(8,10,9,.85); }
-.footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 24px; padding-bottom: 36px; }
+.footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 24px; }
+.site-footer .footer-top { padding-bottom: 36px; }
 .footer-brand { grid-column: 1 / -1; }
 .footer-brand .brand img { height: 36px; }
 .footer-brand p { color: var(--muted); margin: 14px 0 18px; }
 .socials { display: flex; gap: 10px; }
 .socials a { width: 46px; height: 46px; border: 1px solid var(--graphite); border-radius: 10px; display: grid; place-items: center; background: var(--surface); transition: border-color .2s, color .2s; }
 .footer-col { display: flex; flex-direction: column; gap: 10px; }
+.footer-col:last-child { align-items: flex-end; text-align: right; }
 .footer-col h4 { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 4px; font-family: var(--font-body); font-weight: 600; }
 .footer-col a { color: var(--muted); font-size: 15px; transition: color .2s; }
-.footer-bottom { border-top: 1px solid var(--graphite); padding-top: 20px; padding-bottom: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
+.site-footer .footer-bottom { padding-top: 20px; padding-bottom: 48px; }
+.footer-bottom { border-top: 1px solid var(--graphite); display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
 .tagline { letter-spacing: .2em; text-transform: uppercase; font-size: 11px; }
 @media (hover: hover) {
   .socials a:hover { border-color: var(--lime); color: var(--lime); }
@@ -250,8 +253,11 @@ p { margin: 0; }
   .svc-list { grid-template-columns: 1fr 1fr; }
   .contact-cards { grid-template-columns: 1fr 1.25fr; }
   .faq-cta-actions { display: flex; justify-content: center; }
-  .footer-top { grid-template-columns: 2fr 1fr 1fr; }
-  .footer-brand { grid-column: auto; }
+  .footer-top { display: flex; align-items: flex-start; gap: 64px; }
+  .footer-brand { margin-right: auto; }
+  .footer-col:last-child { align-items: flex-start; text-align: left; }
+  .site-footer .footer-top { padding-bottom: 48px; }
+  .site-footer .footer-bottom { padding-bottom: 56px; }
   .footer-bottom { flex-direction: row; justify-content: space-between; }
 }
 
