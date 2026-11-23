@@ -226,7 +226,7 @@ p { margin: 0; }
 .footer-col:last-child { align-items: flex-end; text-align: right; }
 .footer-col h4 { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 4px; font-family: var(--font-body); font-weight: 600; }
 .footer-col a { color: var(--muted); font-size: 15px; transition: color .2s; }
-.site-footer .footer-bottom { padding-top: 32px; padding-bottom: 56px; }
+.site-footer .footer-bottom { padding-top: 28px; padding-bottom: 24px; }
 .footer-bottom::before { content: ""; position: absolute; top: 0; left: 16px; right: 16px; height: 1px; background: var(--graphite); }
 .footer-bottom { position: relative; display: flex; flex-direction: column; gap: 18px; font-size: 13px; color: var(--muted); }
 @media (hover: hover) {
