@@ -174,7 +174,7 @@ p { margin: 0; }
 .page-hero { padding: 40px 0 8px; }
 .page-hero h1 { font-size: clamp(36px, 10vw, 64px); font-weight: 700; letter-spacing: -.03em; }
 .section-faq { padding-top: 24px; }
-.faq-page { max-width: 820px; }
+.faq-page, .page-hero .container { max-width: 868px; }
 .faq-cta { margin-top: 32px; padding: 24px; border: 1px solid rgba(154,242,13,.4); border-radius: 18px; background: var(--surface); text-align: center; }
 .faq-cta h2 { font-size: 24px; }
 .faq-cta p { color: var(--muted); margin-top: 6px; }
