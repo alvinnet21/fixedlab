@@ -39,7 +39,7 @@
     var atContact = false;
     if (contact) {
       var r = contact.getBoundingClientRect();
-      atContact = r.top < window.innerHeight * 0.85 && r.bottom > 0;
+      atContact = r.top < window.innerHeight * 0.85 && r.bottom > window.innerHeight * 0.3;
     }
     bar.classList.toggle("hide", !pastHero || atContact);
   }
