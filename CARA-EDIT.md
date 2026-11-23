@@ -22,7 +22,7 @@ Website otomatis ter-update ±1–2 menit setelah perubahan disimpan ke branch `
 | Nama & keterangan layanan | `index.html` | contoh: `Mac Repair` |
 | Langkah "How it works" | `index.html` | `Tell us the problem` |
 | Pertanyaan FAQ | `faq.html` | `<summary>` = pertanyaan, `<p>` di bawahnya = jawaban |
-| Link Instagram | `index.html` dan `faq.html` | `instagram.com/fixedlab` |
+| Link Instagram | `index.html` dan `faq.html` | `instagram.com/fixedlab.au` |
 
 ## Tambah pertanyaan FAQ
 

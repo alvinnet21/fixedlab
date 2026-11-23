@@ -19,7 +19,7 @@ CARA-EDIT.md            how to edit text on GitHub (Bahasa Indonesia)
 
 - Text message: 0422 092 458 (`sms:+61422092458`)
 - Email: hello@fixedlab.com.au
-- Instagram: https://www.instagram.com/fixedlab
+- Instagram: https://www.instagram.com/fixedlab.au
 - Location: Mascot, NSW
 - **Fonts**: waiting for the brand fonts from Tomo — put the files in `assets/fonts/`, update the
   `@font-face` rules and `--font-display` / `--font-body` in `style.css`.
