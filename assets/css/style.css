@@ -214,9 +214,9 @@ p { margin: 0; }
 }
 
 /* Footer */
-.site-footer { border-top: 1px solid var(--graphite); padding-top: 44px; background: rgba(8,10,9,.85); }
+.site-footer { border-top: 1px solid var(--graphite); padding-top: 56px; background: rgba(8,10,9,.85); }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 24px; }
-.site-footer .footer-top { padding-bottom: 36px; }
+.site-footer .footer-top { padding-bottom: 44px; }
 .footer-brand { grid-column: 1 / -1; }
 .footer-brand .brand img { height: 36px; }
 .footer-brand p { color: var(--muted); margin: 14px 0 18px; }
@@ -226,8 +226,9 @@ p { margin: 0; }
 .footer-col:last-child { align-items: flex-end; text-align: right; }
 .footer-col h4 { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 4px; font-family: var(--font-body); font-weight: 600; }
 .footer-col a { color: var(--muted); font-size: 15px; transition: color .2s; }
-.site-footer .footer-bottom { padding-top: 20px; padding-bottom: 48px; }
-.footer-bottom { border-top: 1px solid var(--graphite); display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
+.site-footer .footer-bottom { padding-top: 32px; padding-bottom: 56px; }
+.footer-bottom::before { content: ""; position: absolute; top: 0; left: 16px; right: 16px; height: 1px; background: var(--graphite); }
+.footer-bottom { position: relative; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
 .tagline { letter-spacing: .2em; text-transform: uppercase; font-size: 11px; }
 @media (hover: hover) {
   .socials a:hover { border-color: var(--lime); color: var(--lime); }
@@ -256,9 +257,11 @@ p { margin: 0; }
   .footer-top { display: flex; align-items: flex-start; gap: 64px; }
   .footer-brand { margin-right: auto; }
   .footer-col:last-child { align-items: flex-start; text-align: left; }
-  .site-footer .footer-top { padding-bottom: 48px; }
-  .site-footer .footer-bottom { padding-bottom: 56px; }
-  .footer-bottom { flex-direction: row; justify-content: space-between; }
+  .site-footer { padding-top: 72px; }
+  .site-footer .footer-top { padding-bottom: 56px; }
+  .site-footer .footer-bottom { padding-top: 36px; padding-bottom: 72px; }
+  .footer-bottom::before { left: 24px; right: 24px; }
+  .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; }
 }
 
 /* ---------- Desktop ---------- */
