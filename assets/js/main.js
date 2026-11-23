@@ -14,6 +14,16 @@
   nav.addEventListener("click", function (e) { if (e.target.closest("a")) setNav(false); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") setNav(false); });
 
+  // Logo click: scroll all the way to the top
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      setNav(false);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (history.replaceState) history.replaceState(null, "", location.pathname + location.search);
+    });
+  });
+
   // Header border on scroll
   var header = document.querySelector(".site-header");
   function onScroll() { header.classList.toggle("scrolled", window.scrollY > 8); }
