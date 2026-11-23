@@ -5,31 +5,24 @@ Static HTML/CSS/JS — no build step. Open `index.html` or host the folder on an
 (Netlify, Vercel, Cloudflare Pages, GitHub Pages).
 
 ```
-index.html              home page (hero, services, how it works, quote form)
+index.html              home page (hero, services, how it works, contact)
 faq.html                FAQ page
 assets/css/style.css    styles — brand tokens at the top (:root)
-assets/js/main.js       mobile menu, action bar, quote form
+assets/js/main.js       mobile menu, action bar
 assets/fonts/           self-hosted fonts (woff2)
 assets/img/             logo (from client), favicon, icons.svg sprite, brands/ (service brand logos), circuit background
 tools/make_circuit.py   regenerates the random circuit background (python3 tools/make_circuit.py <seed>)
 CARA-EDIT.md            how to edit text on GitHub (Bahasa Indonesia)
 ```
 
-## Before going live — replace placeholders
+## Contact details
 
-- **Phone / WhatsApp**: `0400 000 000` / `tel:+61400000000` in `index.html` (contact section).
-- **Social links**: the `href="#"` links in the footer.
-- **Business hours**: currently `Mon–Sat · 9am – 6pm`.
-- **Email**: `hello@fixedlab.com.au` (in `index.html` and `TO` in `assets/js/main.js`).
+- Text message: 0422 092 458 (`sms:+61422092458`)
+- Email: hello@fixedlab.com.au
+- Instagram: https://www.instagram.com/fixedlab
+- Location: Mascot, NSW
 - **Fonts**: waiting for the brand fonts from Tomo — put the files in `assets/fonts/`, update the
   `@font-face` rules and `--font-display` / `--font-body` in `style.css`.
-- **How it works / FAQ**: content still to be confirmed by Tomo.
-
-## Quote form
-
-By default the form opens the visitor's email app with a pre-filled message to the email above.
-To receive submissions directly (no email app needed), create a free form at e.g. Formspree and
-replace the `mailto` step in `assets/js/main.js` with a `fetch()` POST to the form endpoint.
 
 ## Brand
 
