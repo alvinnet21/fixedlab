@@ -17,12 +17,12 @@ Website otomatis ter-update ±1–2 menit setelah perubahan disimpan ke branch `
 
 | Apa | File | Cari teks |
 |---|---|---|
-| Nomor WhatsApp / telepon | `index.html` dan `faq.html` | `61400000000` dan `0400 000 000` |
-| Jam buka | `index.html` | `Mon–Sat` |
+| Nomor SMS | `index.html` dan `faq.html` | `61422092458` dan `0422 092 458` |
+| Email | `index.html` dan `faq.html` | `hello@fixedlab.com.au` |
 | Nama & keterangan layanan | `index.html` | contoh: `Mac Repair` |
 | Langkah "How it works" | `index.html` | `Tell us the problem` |
 | Pertanyaan FAQ | `faq.html` | `<summary>` = pertanyaan, `<p>` di bawahnya = jawaban |
-| Link Facebook / Instagram | `index.html` dan `faq.html` | `aria-label="Facebook"` |
+| Link Instagram | `index.html` dan `faq.html` | `instagram.com/fixedlab` |
 
 ## Tambah pertanyaan FAQ
 
