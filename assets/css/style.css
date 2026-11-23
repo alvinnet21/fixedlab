@@ -257,9 +257,9 @@ p { margin: 0; }
   .footer-brand + .footer-col { min-width: 210px; }
   .footer-brand { margin-right: auto; }
   .footer-col:last-child { align-items: flex-start; text-align: left; }
-  .site-footer { padding-top: 72px; }
-  .site-footer .footer-top { padding-bottom: 56px; }
-  .site-footer .footer-bottom { padding-top: 36px; padding-bottom: 72px; }
+  .site-footer { padding-top: 64px; }
+  .site-footer .footer-top { padding-bottom: 48px; }
+  .site-footer .footer-bottom { padding-top: 28px; padding-bottom: 28px; }
   .footer-bottom::before { left: 24px; right: 24px; }
   .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; }
 }
